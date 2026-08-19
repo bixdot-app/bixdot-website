@@ -611,12 +611,12 @@ footer {
 <!-- ── Stats ── -->
 <div class="stats">
   <div class="stat">
-    <div class="stat-num">433</div>
-    <div class="stat-label">CVEs studied</div>
+    <div class="stat-num">6</div>
+    <div class="stat-label">CVE classes mapped to mitigations</div>
   </div>
   <div class="stat">
     <div class="stat-num">8</div>
-    <div class="stat-label">CVEs patched since v0.1.1</div>
+    <div class="stat-label">security fixes since v0.1.1</div>
   </div>
   <div class="stat">
     <div class="stat-num">100%</div>
@@ -739,7 +739,7 @@ footer {
   <div class="text-center">
     <div class="section-label" style="color:var(--accent)">Security architecture</div>
     <h2 class="section-title">Zero-trust.<br/>By design, not by patch.</h2>
-    <p class="section-sub" style="margin:0 auto">We studied 433 CVEs from existing AI agent platforms and fixed every class of vulnerability at the architecture level.</p>
+    <p class="section-sub" style="margin:0 auto">We studied known CVE classes from existing AI agent platforms and fixed every one at the architecture level — see our public CVE-to-mitigation map.</p>
   </div>
   <div class="security-grid reveal">
     <div class="sec-card">
@@ -765,12 +765,12 @@ footer {
     <div class="sec-card">
       <div class="sec-tag">SANDBOX</div>
       <div class="sec-title">Subprocess isolation</div>
-      <p class="sec-desc">Skills run in isolated subprocesses with stripped environment variables, strict allowlists, and hard timeouts.</p>
+      <p class="sec-desc">Skills run in isolated subprocesses with stripped environment variables, strict allowlists, and hard timeouts. Network access is not yet blocked at the sandbox level.</p>
     </div>
     <div class="sec-card">
       <div class="sec-tag">PRIVACY</div>
-      <div class="sec-title">PII scrubbing for cloud</div>
-      <p class="sec-desc">If you opt into a cloud LLM, emails, phone numbers, API keys, and personal identifiers are scrubbed before the request is sent.</p>
+      <div class="sec-title">Pattern scrubbing for cloud</div>
+      <p class="sec-desc">If you opt into a cloud LLM, emails, phone numbers, and API/GitHub/Anthropic key patterns are scrubbed before the request is sent — not names, addresses, or other personal identifiers.</p>
     </div>
   </div>
   <div style="text-align:center;margin-top:40px">
